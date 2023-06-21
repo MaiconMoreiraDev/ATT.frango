@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Tela de Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .login-container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 30vh;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none; 
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Tela de Login</h2>
+    <form>
+      <input type="text" placeholder="Usuário" required><br>
+      <input type="password" placeholder="Senha" required>
+      <input type="submit" value="Entrar">
+    </form>
+  </div>
+</body>
+</html>

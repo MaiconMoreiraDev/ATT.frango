@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Pagamento</title>
+</head>
+<body onload="exibirPrecoTotal()">
+    <h1>Pagamento por PIX</h1>
+    <center><div id="preco-total"></div></center>
+   <center><img src="qr.png" width="200px" height="200px"></center> 
+    <div class="container">
+        <div class="payment-details">
+            
+
+                
+
+            <p>Código PIX:</p>
+            <div class="pix-code" id="pixCode">PIX-MUITO-ALEATÓRIO</div>
+            <a href="https://wa.me/message/MHGYYA4C7BEWD1" class="button">ENVIE O COMPROVANTE</a>
+            <p>Instruções:</p>
+            <p class="pix-instructions">Escaneie o código PIX ou copie os dados para realizar o pagamento. <b>Caso não envie o comprovante, seu pedido não será confirmado.</b></p>
+            <a href="obg.html"><button class="cart">FINALIZE</button></a>
+        </div>
+    </div>
+    <script>
+        function exibirPrecoTotal() {
+          // Obter o valor do preço do sessionStorage
+          var preco = sessionStorage.getItem("PrecoProduto");
+          
+    
+          // Exibir o preço total na página
+          document.getElementById("preco-total").textContent = "Valor do Pedido: R$ " + preco;
+        }
+        </script>
+
+   
+    
+</body>
+</html>
